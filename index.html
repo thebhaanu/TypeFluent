@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeFluent - Improve Your Typing Speed and Accuracy | Free Online Typing Tutor</title>
+    <meta name="description" content="TypeFluent is a free online typing tutor that helps you improve your typing speed and accuracy with interactive lessons, real-time feedback, and personalized training exercises.">
+    <meta name="keywords" content="typing tutor, learn typing, improve typing speed, touch typing, keyboard practice, typing test, wpm test, typing accuracy, free typing lessons">
+    <meta name="author" content="TypeFluent">
+    <meta property="og:title" content="TypeFluent - Improve Your Typing Speed and Accuracy">
+    <meta property="og:description" content="Learn touch typing for free with TypeFluent's interactive lessons and exercises. Improve your WPM and accuracy with our keyboard visualizer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typefluent.com">
+    <meta property="og:image" content="images/typefluent-preview.jpg">
+    <link rel="canonical" href="https://typefluent.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="keyboard-guide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#3498db">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-switch-label" aria-label="Toggle dark mode">
+                        <span class="theme-switch-icon">🌙</span>
+                        <span class="theme-switch-icon">☀️</span>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <h1>TypeFluent</h1>
+            </div>
+            <p class="tagline">Improve your typing speed and accuracy</p>
+            <nav class="header-links" aria-label="Main navigation">
+                <a href="learn-typing.html" class="primary-link">Learn to Type (Beginners)</a>
+                <a href="keyboard-guide.html" class="guide-link">Keyboard Guide</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="stats-container" aria-label="Typing statistics">
+                <div class="stat">
+                    <div id="wpm">0</div>
+                    <div class="stat-label">WPM</div>
+                </div>
+                <div class="stat">
+                    <div id="accuracy">100%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div id="timer">60</div>
+                    <div class="stat-label">Seconds</div>
+                </div>
+            </section>
+
+            <section class="typing-area" aria-label="Typing practice area">
+                <div id="text-display" class="text-display" aria-live="polite"></div>
+                <textarea id="input-field" class="input-field" placeholder="Start typing when ready..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Type the text shown above"></textarea>
+            </section>
+
+            <section class="keyboard-visualizer" aria-label="Keyboard visualization">
+                <div class="toggle-keyboard">
+                    <input type="checkbox" id="show-keyboard" checked>
+                    <label for="show-keyboard">Show Keyboard Guide</label>
+                </div>
+                
+                <div class="keyboard-wrapper" id="keyboard-wrapper">
+                    <div class="keyboard-container">
+                        <div class="keyboard">
+                            <!-- Row 1 -->
+                            <div class="keyboard-row">
+                                <div class="key special" data-finger="left-pinky">`</div>
+                                <div class="key" data-finger="left-pinky">1</div>
+                                <div class="key" data-finger="left-ring">2</div>
+                                <div class="key" data-finger="left-middle">3</div>
+                                <div class="key" data-finger="left-index">4</div>
+                                <div class="key" data-finger="left-index">5</div>
+                                <div class="key" data-finger="right-index">6</div>
+                                <div class="key" data-finger="right-index">7</div>
+                                <div class="key" data-finger="right-middle">8</div>
+                                <div class="key" data-finger="right-ring">9</div>
+                                <div class="key" data-finger="right-pinky">0</div>
+                                <div class="key" data-finger="right-pinky">-</div>
+                                <div class="key" data-finger="right-pinky">=</div>
+                                <div class="key special" data-finger="right-pinky">Backspace</div>
+                            </div>
+                            
+                            <!-- Row 2 -->
+                            <div class="keyboard-row">
+                                <div class="key special" data-finger="left-pinky">Tab</div>
+                                <div class="key" data-finger="left-pinky">Q</div>
+                                <div class="key" data-finger="left-ring">W</div>
+                                <div class="key" data-finger="left-middle">E</div>
+                                <div class="key" data-finger="left-index">R</div>
+                                <div class="key" data-finger="left-index">T</div>
+                                <div class="key" data-finger="right-index">Y</div>
+                                <div class="key" data-finger="right-index">U</div>
+                                <div class="key" data-finger="right-middle">I</div>
+                                <div class="key" data-finger="right-ring">O</div>
+                                <div class="key" data-finger="right-pinky">P</div>
+                                <div class="key" data-finger="right-pinky">[</div>
+                                <div class="key" data-finger="right-pinky">]</div>
+                                <div class="key special" data-finger="right-pinky">\</div>
+                            </div>
+                            
+                            <!-- Row 3 -->
+                            <div class="keyboard-row">
+                                <div class="key special" data-finger="left-pinky">Caps</div>
+                                <div class="key home" data-finger="left-pinky">A</div>
+                                <div class="key home" data-finger="left-ring">S</div>
+                                <div class="key home" data-finger="left-middle">D</div>
+                                <div class="key home" data-finger="left-index">F</div>
+                                <div class="key" data-finger="left-index">G</div>
+                                <div class="key" data-finger="right-index">H</div>
+                                <div class="key home" data-finger="right-index">J</div>
+                                <div class="key home" data-finger="right-middle">K</div>
+                                <div class="key home" data-finger="right-ring">L</div>
+                                <div class="key home" data-finger="right-pinky">;</div>
+                                <div class="key" data-finger="right-pinky">'</div>
+                                <div class="key special" data-finger="right-pinky">Enter</div>
+                            </div>
+                            
+                            <!-- Row 4 -->
+                            <div class="keyboard-row">
+                                <div class="key special" data-finger="left-pinky">Shift</div>
+                                <div class="key" data-finger="left-pinky">Z</div>
+                                <div class="key" data-finger="left-ring">X</div>
+                                <div class="key" data-finger="left-middle">C</div>
+                                <div class="key" data-finger="left-index">V</div>
+                                <div class="key" data-finger="left-index">B</div>
+                                <div class="key" data-finger="right-index">N</div>
+                                <div class="key" data-finger="right-index">M</div>
+                                <div class="key" data-finger="right-middle">,</div>
+                                <div class="key" data-finger="right-ring">.</div>
+                                <div class="key" data-finger="right-pinky">/</div>
+                                <div class="key special" data-finger="right-pinky">Shift</div>
+                            </div>
+                            
+                            <!-- Row 5 (Space Bar) -->
+                            <div class="keyboard-row">
+                                <div class="key special" data-finger="left-pinky">Ctrl</div>
+                                <div class="key special" data-finger="left-pinky">Win</div>
+                                <div class="key special" data-finger="left-pinky">Alt</div>
+                                <div class="key space" data-finger="thumb">Space</div>
+                                <div class="key special" data-finger="right-pinky">Alt</div>
+                                <div class="key special" data-finger="right-pinky">Win</div>
+                                <div class="key special" data-finger="right-pinky">Menu</div>
+                                <div class="key special" data-finger="right-pinky">Ctrl</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hands-container">
+                        <div class="hands">
+                            <div class="hand left-hand">
+                                <div class="finger pinky" id="left-pinky"></div>
+                                <div class="finger ring" id="left-ring"></div>
+                                <div class="finger middle" id="left-middle"></div>
+                                <div class="finger index" id="left-index"></div>
+                                <div class="finger thumb" id="left-thumb"></div>
+                            </div>
+                            <div class="hand right-hand">
+                                <div class="finger thumb" id="right-thumb"></div>
+                                <div class="finger index" id="right-index"></div>
+                                <div class="finger middle" id="right-middle"></div>
+                                <div class="finger ring" id="right-ring"></div>
+                                <div class="finger pinky" id="right-pinky"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="controls" aria-label="Practice controls">
+                <div class="difficulty-selector">
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="training" selected>Training</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="mode-selector">
+                    <label for="flow-mode">Flow Mode:</label>
+                    <input type="checkbox" id="flow-mode">
+                    <span class="mode-description">No timer, paragraphs advance automatically</span>
+                </div>
+                <button id="restart-btn">Restart</button>
+            </section>
+
+            <div id="result-modal" class="modal" aria-modal="true" aria-labelledby="result-title">
+                <div class="modal-content">
+                    <h2 id="result-title">Results</h2>
+                    <div class="result-stats">
+                        <div class="result-stat">
+                            <span class="result-value" id="result-wpm">0</span>
+                            <span class="result-label">WPM</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-value" id="result-accuracy">100%</span>
+                            <span class="result-label">Accuracy</span>
+                        </div>
+                        <div class="result-stat">
+                            <span class="result-value" id="result-time">60</span>
+                            <span class="result-label">Seconds</span>
+                        </div>
+                    </div>
+                    <button id="close-modal-btn">Try Again</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ | <a href="#" id="about-link">About</a></p>
+        <p class="copyright">© <span id="current-year">2023</span> TypeFluent. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get current year for copyright
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="keyboard-guide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

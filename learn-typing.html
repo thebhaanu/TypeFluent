@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Type - Free Typing Lessons for Beginners | TypeFluent</title>
+    <meta name="description" content="Learn touch typing with our comprehensive, step-by-step beginner lessons. Master proper finger placement, home row, top row, bottom row, and numbers with interactive exercises.">
+    <meta name="keywords" content="learn typing, typing lessons, beginner typing, touch typing, home row, keyboard lessons, typing tutorial, free typing course, keyboard fingers, typing practice">
+    <meta name="author" content="TypeFluent">
+    <meta property="og:title" content="Learn to Type - Free Typing Lessons for Beginners">
+    <meta property="og:description" content="Master touch typing with our step-by-step beginner course featuring interactive keyboard guides and structured lessons.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typefluent.com/learn-typing.html">
+    <meta property="og:image" content="images/typefluent-lessons-preview.jpg">
+    <link rel="canonical" href="https://typefluent.com/learn-typing.html">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="keyboard-guide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="learn-typing.css">
+    <meta name="theme-color" content="#3498db">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch">
+                    <label for="theme-switch" class="theme-switch-label" aria-label="Toggle dark mode">
+                        <span class="theme-switch-icon">🌙</span>
+                        <span class="theme-switch-icon">☀️</span>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <h1>Learn to Type</h1>
+            </div>
+            <p class="tagline">A step-by-step guide for beginners</p>
+            <nav class="header-links" aria-label="Main navigation">
+                <a href="index.html" class="primary-link">Back to Practice</a>
+                <a href="keyboard-guide.html" class="guide-link">Keyboard Guide</a>
+            </nav>
+        </header>
+
+        <main class="learning-container">
+            <aside class="sidebar">
+                <nav class="lesson-list" aria-label="Lesson navigation">
+                    <h2>Lessons</h2>
+                    <ul>
+                        <li class="active" data-lesson="intro"><span>Introduction</span></li>
+                        <li data-lesson="proper-posture"><span>Proper Posture</span></li>
+                        <li data-lesson="home-row"><span>Home Row Keys</span></li>
+                        <li data-lesson="top-row"><span>Top Row Keys</span></li>
+                        <li data-lesson="bottom-row"><span>Bottom Row Keys</span></li>
+                        <li data-lesson="numbers-symbols"><span>Numbers & Symbols</span></li>
+                        <li data-lesson="practice-tips"><span>Practice Tips</span></li>
+                    </ul>
+                </nav>
+                <div class="progress-tracker">
+                    <div class="progress-bar">
+                        <div class="progress" id="lesson-progress" style="width: 14%"></div>
+                    </div>
+                    <div class="progress-text">Progress: <span id="progress-percent">14%</span></div>
+                </div>
+            </aside>
+
+            <div class="lesson-content">
+                <article id="intro" class="lesson active">
+                    <h2>Introduction to Touch Typing</h2>
+                    <p>Welcome to TypeFluent's beginner guide to touch typing! This comprehensive course will teach you how to type efficiently without looking at the keyboard.</p>
+                    
+                    <section>
+                        <h3>What is Touch Typing?</h3>
+                        <p>Touch typing is the ability to type without looking at the keyboard, using muscle memory to find keys. This method allows you to:</p>
+                        <ul>
+                            <li>Type faster (average typists reach 40+ WPM)</li>
+                            <li>Maintain high accuracy</li>
+                            <li>Reduce strain and fatigue</li>
+                            <li>Focus on your content instead of hunting for keys</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>How This Course Works</h3>
+                        <p>We'll guide you through progressive lessons, starting with the home row keys and gradually expanding to cover the entire keyboard. Each lesson includes:</p>
+                        <ul>
+                            <li>Visual guides showing correct finger placement</li>
+                            <li>Short exercises to build muscle memory</li>
+                            <li>Practice texts using only the keys you've learned</li>
+                        </ul>
+                    </section>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn next" data-next="proper-posture">Next: Proper Posture →</button>
+                    </div>
+                </article>
+
+                <article id="proper-posture" class="lesson">
+                    <h2>Proper Posture and Hand Position</h2>
+                    <p>Before you start typing, it's important to establish good habits with proper posture and hand positioning.</p>
+
+                    <section>
+                        <h3>Sitting Position</h3>
+                        <div class="image-container">
+                            <img src="images/posture.jpg" alt="Proper sitting posture for typing" class="lesson-image">
+                        </div>
+                        <ul>
+                            <li>Sit up straight with your back against the chair</li>
+                            <li>Keep your feet flat on the floor</li>
+                            <li>Position your screen at eye level</li>
+                            <li>Keep your elbows at a 90-degree angle</li>
+                            <li>Wrists should hover slightly above the keyboard, not resting on the desk</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Hand Position</h3>
+                        <p>Your hands should be positioned with fingers curved gently over the keyboard:</p>
+                        <ul>
+                            <li>Fingers should be curved, not flat</li>
+                            <li>Thumbs rest on or above the spacebar</li>
+                            <li>Start with your fingers on the home row (ASDF for left hand, JKL; for right hand)</li>
+                            <li>Maintain a light touch - don't pound the keys</li>
+                        </ul>
+                    </section>
+
+                    <div class="important-tip">
+                        <p><strong>Remember:</strong> Good posture reduces fatigue and prevents repetitive strain injuries. Take breaks every 20-30 minutes!</p>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="intro">← Previous</button>
+                        <button class="lesson-nav-btn next" data-next="home-row">Next: Home Row Keys →</button>
+                    </div>
+                </article>
+
+                <article id="home-row" class="lesson">
+                    <h2>Home Row Keys</h2>
+                    <p>The home row is where your fingers naturally rest and is the foundation of touch typing.</p>
+
+                    <section>
+                        <h3>Finger Placement</h3>
+                        <div class="keyboard-demo-container">
+                            <div class="keyboard home-row-highlight">
+                                <!-- Row 1 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">`</div>
+                                    <div class="key" data-finger="left-pinky">1</div>
+                                    <div class="key" data-finger="left-ring">2</div>
+                                    <div class="key" data-finger="left-middle">3</div>
+                                    <div class="key" data-finger="left-index">4</div>
+                                    <div class="key" data-finger="left-index">5</div>
+                                    <div class="key" data-finger="right-index">6</div>
+                                    <div class="key" data-finger="right-index">7</div>
+                                    <div class="key" data-finger="right-middle">8</div>
+                                    <div class="key" data-finger="right-ring">9</div>
+                                    <div class="key" data-finger="right-pinky">0</div>
+                                    <div class="key" data-finger="right-pinky">-</div>
+                                    <div class="key" data-finger="right-pinky">=</div>
+                                    <div class="key special" data-finger="right-pinky">Backspace</div>
+                                </div>
+                                
+                                <!-- Row 2 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Tab</div>
+                                    <div class="key" data-finger="left-pinky">Q</div>
+                                    <div class="key" data-finger="left-ring">W</div>
+                                    <div class="key" data-finger="left-middle">E</div>
+                                    <div class="key" data-finger="left-index">R</div>
+                                    <div class="key" data-finger="left-index">T</div>
+                                    <div class="key" data-finger="right-index">Y</div>
+                                    <div class="key" data-finger="right-index">U</div>
+                                    <div class="key" data-finger="right-middle">I</div>
+                                    <div class="key" data-finger="right-ring">O</div>
+                                    <div class="key" data-finger="right-pinky">P</div>
+                                    <div class="key" data-finger="right-pinky">[</div>
+                                    <div class="key" data-finger="right-pinky">]</div>
+                                    <div class="key special" data-finger="right-pinky">\</div>
+                                </div>
+                                
+                                <!-- Row 3 (Home Row) -->
+                                <div class="keyboard-row highlight-row">
+                                    <div class="key special" data-finger="left-pinky">Caps</div>
+                                    <div class="key home highlight-key" data-finger="left-pinky">A</div>
+                                    <div class="key home highlight-key" data-finger="left-ring">S</div>
+                                    <div class="key home highlight-key" data-finger="left-middle">D</div>
+                                    <div class="key home highlight-key" data-finger="left-index">F</div>
+                                    <div class="key" data-finger="left-index">G</div>
+                                    <div class="key" data-finger="right-index">H</div>
+                                    <div class="key home highlight-key" data-finger="right-index">J</div>
+                                    <div class="key home highlight-key" data-finger="right-middle">K</div>
+                                    <div class="key home highlight-key" data-finger="right-ring">L</div>
+                                    <div class="key home highlight-key" data-finger="right-pinky">;</div>
+                                    <div class="key" data-finger="right-pinky">'</div>
+                                    <div class="key special" data-finger="right-pinky">Enter</div>
+                                </div>
+                                
+                                <!-- Row 4 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Shift</div>
+                                    <div class="key" data-finger="left-pinky">Z</div>
+                                    <div class="key" data-finger="left-ring">X</div>
+                                    <div class="key" data-finger="left-middle">C</div>
+                                    <div class="key" data-finger="left-index">V</div>
+                                    <div class="key" data-finger="left-index">B</div>
+                                    <div class="key" data-finger="right-index">N</div>
+                                    <div class="key" data-finger="right-index">M</div>
+                                    <div class="key" data-finger="right-middle">,</div>
+                                    <div class="key" data-finger="right-ring">.</div>
+                                    <div class="key" data-finger="right-pinky">/</div>
+                                    <div class="key special" data-finger="right-pinky">Shift</div>
+                                </div>
+                                
+                                <!-- Row 5 (Space Bar) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Ctrl</div>
+                                    <div class="key special" data-finger="left-pinky">Win</div>
+                                    <div class="key special" data-finger="left-pinky">Alt</div>
+                                    <div class="key space" data-finger="thumb">Space</div>
+                                    <div class="key special" data-finger="right-pinky">Alt</div>
+                                    <div class="key special" data-finger="right-pinky">Win</div>
+                                    <div class="key special" data-finger="right-pinky">Menu</div>
+                                    <div class="key special" data-finger="right-pinky">Ctrl</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Place your fingers on the following keys:</p>
+                        <ul>
+                            <li><strong>Left pinky:</strong> A</li>
+                            <li><strong>Left ring finger:</strong> S</li>
+                            <li><strong>Left middle finger:</strong> D</li>
+                            <li><strong>Left index finger:</strong> F</li>
+                            <li><strong>Right index finger:</strong> J</li>
+                            <li><strong>Right middle finger:</strong> K</li>
+                            <li><strong>Right ring finger:</strong> L</li>
+                            <li><strong>Right pinky:</strong> ; (semicolon)</li>
+                        </ul>
+                        
+                        <p>Notice the small bumps on the F and J keys. These help you find the home position without looking.</p>
+                    </section>
+
+                    <section>
+                        <h3>Practice Exercise</h3>
+                        <p>Try typing the following sequences without looking at your keyboard:</p>
+                        
+                        <div class="practice-text">
+                            <p>asdf jkl; asdf jkl; asdf jkl;</p>
+                            <p>fjf jfj fjf jfj fjf jfj</p>
+                            <p>dkd kdk dkd kdk dkd kdk</p>
+                            <p>sls lsl sls lsl sls lsl</p>
+                            <p>aaa ;;; aaa ;;; aaa ;;;</p>
+                        </div>
+
+                        <div class="action-btn">
+                            <a href="index.html?practice=home-row&level=1" class="practice-btn">Practice Home Row</a>
+                        </div>
+                    </section>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="proper-posture">← Previous</button>
+                        <button class="lesson-nav-btn next" data-next="top-row">Next: Top Row Keys →</button>
+                    </div>
+                </article>
+
+                <article id="top-row" class="lesson">
+                    <h2>Top Row Keys</h2>
+                    <p>Now that you're comfortable with the home row, let's learn the top row keys.</p>
+
+                    <section>
+                        <h3>Finger Placement</h3>
+                        <div class="keyboard-demo-container">
+                            <div class="keyboard top-row-highlight">
+                                <!-- Row 1 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">`</div>
+                                    <div class="key" data-finger="left-pinky">1</div>
+                                    <div class="key" data-finger="left-ring">2</div>
+                                    <div class="key" data-finger="left-middle">3</div>
+                                    <div class="key" data-finger="left-index">4</div>
+                                    <div class="key" data-finger="left-index">5</div>
+                                    <div class="key" data-finger="right-index">6</div>
+                                    <div class="key" data-finger="right-index">7</div>
+                                    <div class="key" data-finger="right-middle">8</div>
+                                    <div class="key" data-finger="right-ring">9</div>
+                                    <div class="key" data-finger="right-pinky">0</div>
+                                    <div class="key" data-finger="right-pinky">-</div>
+                                    <div class="key" data-finger="right-pinky">=</div>
+                                    <div class="key special" data-finger="right-pinky">Backspace</div>
+                                </div>
+                                
+                                <!-- Row 2 (Top Row) -->
+                                <div class="keyboard-row highlight-row">
+                                    <div class="key special" data-finger="left-pinky">Tab</div>
+                                    <div class="key highlight-key" data-finger="left-pinky">Q</div>
+                                    <div class="key highlight-key" data-finger="left-ring">W</div>
+                                    <div class="key highlight-key" data-finger="left-middle">E</div>
+                                    <div class="key highlight-key" data-finger="left-index">R</div>
+                                    <div class="key highlight-key" data-finger="left-index">T</div>
+                                    <div class="key highlight-key" data-finger="right-index">Y</div>
+                                    <div class="key highlight-key" data-finger="right-index">U</div>
+                                    <div class="key highlight-key" data-finger="right-middle">I</div>
+                                    <div class="key highlight-key" data-finger="right-ring">O</div>
+                                    <div class="key highlight-key" data-finger="right-pinky">P</div>
+                                    <div class="key" data-finger="right-pinky">[</div>
+                                    <div class="key" data-finger="right-pinky">]</div>
+                                    <div class="key special" data-finger="right-pinky">\</div>
+                                </div>
+                                
+                                <!-- Row 3 (Home Row) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Caps</div>
+                                    <div class="key home" data-finger="left-pinky">A</div>
+                                    <div class="key home" data-finger="left-ring">S</div>
+                                    <div class="key home" data-finger="left-middle">D</div>
+                                    <div class="key home" data-finger="left-index">F</div>
+                                    <div class="key" data-finger="left-index">G</div>
+                                    <div class="key" data-finger="right-index">H</div>
+                                    <div class="key home" data-finger="right-index">J</div>
+                                    <div class="key home" data-finger="right-middle">K</div>
+                                    <div class="key home" data-finger="right-ring">L</div>
+                                    <div class="key home" data-finger="right-pinky">;</div>
+                                    <div class="key" data-finger="right-pinky">'</div>
+                                    <div class="key special" data-finger="right-pinky">Enter</div>
+                                </div>
+                                
+                                <!-- Row 4 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Shift</div>
+                                    <div class="key" data-finger="left-pinky">Z</div>
+                                    <div class="key" data-finger="left-ring">X</div>
+                                    <div class="key" data-finger="left-middle">C</div>
+                                    <div class="key" data-finger="left-index">V</div>
+                                    <div class="key" data-finger="left-index">B</div>
+                                    <div class="key" data-finger="right-index">N</div>
+                                    <div class="key" data-finger="right-index">M</div>
+                                    <div class="key" data-finger="right-middle">,</div>
+                                    <div class="key" data-finger="right-ring">.</div>
+                                    <div class="key" data-finger="right-pinky">/</div>
+                                    <div class="key special" data-finger="right-pinky">Shift</div>
+                                </div>
+                                
+                                <!-- Row 5 (Space Bar) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Ctrl</div>
+                                    <div class="key special" data-finger="left-pinky">Win</div>
+                                    <div class="key special" data-finger="left-pinky">Alt</div>
+                                    <div class="key space" data-finger="thumb">Space</div>
+                                    <div class="key special" data-finger="right-pinky">Alt</div>
+                                    <div class="key special" data-finger="right-pinky">Win</div>
+                                    <div class="key special" data-finger="right-pinky">Menu</div>
+                                    <div class="key special" data-finger="right-pinky">Ctrl</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Reach up from the home row to type these keys:</p>
+                        <ul>
+                            <li><strong>Left pinky:</strong> Q</li>
+                            <li><strong>Left ring finger:</strong> W</li>
+                            <li><strong>Left middle finger:</strong> E</li>
+                            <li><strong>Left index finger:</strong> R and T</li>
+                            <li><strong>Right index finger:</strong> Y and U</li>
+                            <li><strong>Right middle finger:</strong> I</li>
+                            <li><strong>Right ring finger:</strong> O</li>
+                            <li><strong>Right pinky:</strong> P</li>
+                        </ul>
+                        
+                        <p>Always return to the home row position after typing a key from another row.</p>
+                    </section>
+
+                    <section>
+                        <h3>Practice Exercise</h3>
+                        <div class="practice-text">
+                            <p>qwerty uiop qwerty uiop</p>
+                            <p>fruit pipe quilt trip wire</p>
+                            <p>fire dry yup quit we put</p>
+                            <p>we quit work trip worry</p>
+                        </div>
+
+                        <div class="action-btn">
+                            <a href="index.html?practice=top-row&level=6" class="practice-btn">Practice Top Row</a>
+                        </div>
+                    </section>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="home-row">← Previous</button>
+                        <button class="lesson-nav-btn next" data-next="bottom-row">Next: Bottom Row Keys →</button>
+                    </div>
+                </article>
+
+                <article id="bottom-row" class="lesson">
+                    <h2>Bottom Row Keys</h2>
+                    <p>Now let's learn the bottom row to complete the alphabet keys.</p>
+
+                    <section>
+                        <h3>Finger Placement</h3>
+                        <div class="keyboard-demo-container">
+                            <div class="keyboard bottom-row-highlight">
+                                <!-- Row 1 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">`</div>
+                                    <div class="key" data-finger="left-pinky">1</div>
+                                    <div class="key" data-finger="left-ring">2</div>
+                                    <div class="key" data-finger="left-middle">3</div>
+                                    <div class="key" data-finger="left-index">4</div>
+                                    <div class="key" data-finger="left-index">5</div>
+                                    <div class="key" data-finger="right-index">6</div>
+                                    <div class="key" data-finger="right-index">7</div>
+                                    <div class="key" data-finger="right-middle">8</div>
+                                    <div class="key" data-finger="right-ring">9</div>
+                                    <div class="key" data-finger="right-pinky">0</div>
+                                    <div class="key" data-finger="right-pinky">-</div>
+                                    <div class="key" data-finger="right-pinky">=</div>
+                                    <div class="key special" data-finger="right-pinky">Backspace</div>
+                                </div>
+                                
+                                <!-- Row 2 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Tab</div>
+                                    <div class="key" data-finger="left-pinky">Q</div>
+                                    <div class="key" data-finger="left-ring">W</div>
+                                    <div class="key" data-finger="left-middle">E</div>
+                                    <div class="key" data-finger="left-index">R</div>
+                                    <div class="key" data-finger="left-index">T</div>
+                                    <div class="key" data-finger="right-index">Y</div>
+                                    <div class="key" data-finger="right-index">U</div>
+                                    <div class="key" data-finger="right-middle">I</div>
+                                    <div class="key" data-finger="right-ring">O</div>
+                                    <div class="key" data-finger="right-pinky">P</div>
+                                    <div class="key" data-finger="right-pinky">[</div>
+                                    <div class="key" data-finger="right-pinky">]</div>
+                                    <div class="key special" data-finger="right-pinky">\</div>
+                                </div>
+                                
+                                <!-- Row 3 (Home Row) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Caps</div>
+                                    <div class="key home" data-finger="left-pinky">A</div>
+                                    <div class="key home" data-finger="left-ring">S</div>
+                                    <div class="key home" data-finger="left-middle">D</div>
+                                    <div class="key home" data-finger="left-index">F</div>
+                                    <div class="key" data-finger="left-index">G</div>
+                                    <div class="key" data-finger="right-index">H</div>
+                                    <div class="key home" data-finger="right-index">J</div>
+                                    <div class="key home" data-finger="right-middle">K</div>
+                                    <div class="key home" data-finger="right-ring">L</div>
+                                    <div class="key home" data-finger="right-pinky">;</div>
+                                    <div class="key" data-finger="right-pinky">'</div>
+                                    <div class="key special" data-finger="right-pinky">Enter</div>
+                                </div>
+                                
+                                <!-- Row 4 (Bottom Row) -->
+                                <div class="keyboard-row highlight-row">
+                                    <div class="key special" data-finger="left-pinky">Shift</div>
+                                    <div class="key highlight-key" data-finger="left-pinky">Z</div>
+                                    <div class="key highlight-key" data-finger="left-ring">X</div>
+                                    <div class="key highlight-key" data-finger="left-middle">C</div>
+                                    <div class="key highlight-key" data-finger="left-index">V</div>
+                                    <div class="key highlight-key" data-finger="left-index">B</div>
+                                    <div class="key highlight-key" data-finger="right-index">N</div>
+                                    <div class="key highlight-key" data-finger="right-index">M</div>
+                                    <div class="key highlight-key" data-finger="right-middle">,</div>
+                                    <div class="key highlight-key" data-finger="right-ring">.</div>
+                                    <div class="key highlight-key" data-finger="right-pinky">/</div>
+                                    <div class="key special" data-finger="right-pinky">Shift</div>
+                                </div>
+                                
+                                <!-- Row 5 (Space Bar) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Ctrl</div>
+                                    <div class="key special" data-finger="left-pinky">Win</div>
+                                    <div class="key special" data-finger="left-pinky">Alt</div>
+                                    <div class="key space" data-finger="thumb">Space</div>
+                                    <div class="key special" data-finger="right-pinky">Alt</div>
+                                    <div class="key special" data-finger="right-pinky">Win</div>
+                                    <div class="key special" data-finger="right-pinky">Menu</div>
+                                    <div class="key special" data-finger="right-pinky">Ctrl</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Reach down from the home row to type these keys:</p>
+                        <ul>
+                            <li><strong>Left pinky:</strong> Z</li>
+                            <li><strong>Left ring finger:</strong> X</li>
+                            <li><strong>Left middle finger:</strong> C</li>
+                            <li><strong>Left index finger:</strong> V and B</li>
+                            <li><strong>Right index finger:</strong> N and M</li>
+                            <li><strong>Right middle finger:</strong> , (comma)</li>
+                            <li><strong>Right ring finger:</strong> . (period)</li>
+                            <li><strong>Right pinky:</strong> / (forward slash)</li>
+                        </ul>
+                        
+                        <h3>Practice Exercise</h3>
+                        <div class="practice-text">
+                            <p>zxcv bnm, ./</p>
+                            <p>lazy mix zoom vex box navy</p>
+                            <p>crazy excel numb zipper</p>
+                            <p>max van cab zinc mix bean</p>
+                        </div>
+                    </section>
+
+                    <div class="action-btn">
+                        <a href="index.html?practice=bottom-row&level=7" class="practice-btn">Practice Bottom Row</a>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="top-row">← Previous</button>
+                        <button class="lesson-nav-btn next" data-next="numbers-symbols">Next: Numbers & Symbols →</button>
+                    </div>
+                </article>
+
+                <article id="numbers-symbols" class="lesson">
+                    <h2>Numbers & Symbols</h2>
+                    <p>The final step is mastering the number row and important symbols.</p>
+
+                    <section>
+                        <h3>Finger Placement</h3>
+                        <div class="keyboard-demo-container">
+                            <div class="keyboard number-row-highlight">
+                                <!-- Row 1 (Number Row) -->
+                                <div class="keyboard-row highlight-row">
+                                    <div class="key special highlight-key" data-finger="left-pinky">`</div>
+                                    <div class="key highlight-key" data-finger="left-pinky">1</div>
+                                    <div class="key highlight-key" data-finger="left-ring">2</div>
+                                    <div class="key highlight-key" data-finger="left-middle">3</div>
+                                    <div class="key highlight-key" data-finger="left-index">4</div>
+                                    <div class="key highlight-key" data-finger="left-index">5</div>
+                                    <div class="key highlight-key" data-finger="right-index">6</div>
+                                    <div class="key highlight-key" data-finger="right-index">7</div>
+                                    <div class="key highlight-key" data-finger="right-middle">8</div>
+                                    <div class="key highlight-key" data-finger="right-ring">9</div>
+                                    <div class="key highlight-key" data-finger="right-pinky">0</div>
+                                    <div class="key highlight-key" data-finger="right-pinky">-</div>
+                                    <div class="key highlight-key" data-finger="right-pinky">=</div>
+                                    <div class="key special" data-finger="right-pinky">Backspace</div>
+                                </div>
+                                
+                                <!-- Row 2 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Tab</div>
+                                    <div class="key" data-finger="left-pinky">Q</div>
+                                    <div class="key" data-finger="left-ring">W</div>
+                                    <div class="key" data-finger="left-middle">E</div>
+                                    <div class="key" data-finger="left-index">R</div>
+                                    <div class="key" data-finger="left-index">T</div>
+                                    <div class="key" data-finger="right-index">Y</div>
+                                    <div class="key" data-finger="right-index">U</div>
+                                    <div class="key" data-finger="right-middle">I</div>
+                                    <div class="key" data-finger="right-ring">O</div>
+                                    <div class="key" data-finger="right-pinky">P</div>
+                                    <div class="key" data-finger="right-pinky">[</div>
+                                    <div class="key" data-finger="right-pinky">]</div>
+                                    <div class="key special" data-finger="right-pinky">\</div>
+                                </div>
+                                
+                                <!-- Row 3 (Home Row) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Caps</div>
+                                    <div class="key home" data-finger="left-pinky">A</div>
+                                    <div class="key home" data-finger="left-ring">S</div>
+                                    <div class="key home" data-finger="left-middle">D</div>
+                                    <div class="key home" data-finger="left-index">F</div>
+                                    <div class="key" data-finger="left-index">G</div>
+                                    <div class="key" data-finger="right-index">H</div>
+                                    <div class="key home" data-finger="right-index">J</div>
+                                    <div class="key home" data-finger="right-middle">K</div>
+                                    <div class="key home" data-finger="right-ring">L</div>
+                                    <div class="key home" data-finger="right-pinky">;</div>
+                                    <div class="key" data-finger="right-pinky">'</div>
+                                    <div class="key special" data-finger="right-pinky">Enter</div>
+                                </div>
+                                
+                                <!-- Row 4 -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Shift</div>
+                                    <div class="key" data-finger="left-pinky">Z</div>
+                                    <div class="key" data-finger="left-ring">X</div>
+                                    <div class="key" data-finger="left-middle">C</div>
+                                    <div class="key" data-finger="left-index">V</div>
+                                    <div class="key" data-finger="left-index">B</div>
+                                    <div class="key" data-finger="right-index">N</div>
+                                    <div class="key" data-finger="right-index">M</div>
+                                    <div class="key" data-finger="right-middle">,</div>
+                                    <div class="key" data-finger="right-ring">.</div>
+                                    <div class="key" data-finger="right-pinky">/</div>
+                                    <div class="key special" data-finger="right-pinky">Shift</div>
+                                </div>
+                                
+                                <!-- Row 5 (Space Bar) -->
+                                <div class="keyboard-row">
+                                    <div class="key special" data-finger="left-pinky">Ctrl</div>
+                                    <div class="key special" data-finger="left-pinky">Win</div>
+                                    <div class="key special" data-finger="left-pinky">Alt</div>
+                                    <div class="key space" data-finger="thumb">Space</div>
+                                    <div class="key special" data-finger="right-pinky">Alt</div>
+                                    <div class="key special" data-finger="right-pinky">Win</div>
+                                    <div class="key special" data-finger="right-pinky">Menu</div>
+                                    <div class="key special" data-finger="right-pinky">Ctrl</div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Reach up from the home row to type these keys:</p>
+                        <ul>
+                            <li><strong>Left pinky:</strong> 1 and ` (backtick)</li>
+                            <li><strong>Left ring finger:</strong> 2</li>
+                            <li><strong>Left middle finger:</strong> 3</li>
+                            <li><strong>Left index finger:</strong> 4 and 5</li>
+                            <li><strong>Right index finger:</strong> 6 and 7</li>
+                            <li><strong>Right middle finger:</strong> 8</li>
+                            <li><strong>Right ring finger:</strong> 9</li>
+                            <li><strong>Right pinky:</strong> 0, - (hyphen), and = (equals)</li>
+                        </ul>
+                        
+                        <h3>Practice Exercise</h3>
+                        <div class="practice-text">
+                            <p>1234 5678 90</p>
+                            <p>12 34 56 78 90</p>
+                            <p>123 456 789 0</p>
+                            <p>315 497 628 810</p>
+                        </div>
+                    </section>
+
+                    <div class="action-btn">
+                        <a href="index.html?practice=numbers-symbols&level=8" class="practice-btn">Practice Numbers & Symbols</a>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="bottom-row">← Previous</button>
+                        <button class="lesson-nav-btn next" data-next="practice-tips">Next: Practice Tips →</button>
+                    </div>
+                </article>
+
+                <article id="practice-tips" class="lesson">
+                    <h2>Practice Tips & Next Steps</h2>
+                    <p>Congratulations on completing the basic touch typing lessons! Here are some tips to continue improving:</p>
+
+                    <section>
+                        <h3>Daily Practice</h3>
+                        <ul>
+                            <li>Practice for at least 15-30 minutes daily</li>
+                            <li>Focus on accuracy first, then speed</li>
+                            <li>Use the TypeFluent training mode to practice progressively</li>
+                            <li>Set realistic goals (e.g., improve by 5 WPM each week)</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Common Mistakes to Avoid</h3>
+                        <ul>
+                            <li>Looking at the keyboard while typing</li>
+                            <li>Using only a few fingers instead of all ten</li>
+                            <li>Poor posture leading to fatigue and errors</li>
+                            <li>Forgetting to return to home position</li>
+                            <li>Being discouraged by initial slow speed</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Recommended Practice Schedule</h3>
+                        <div class="schedule-table">
+                            <table>
+                                <tr>
+                                    <th>Week</th>
+                                    <th>Focus Area</th>
+                                    <th>Goal</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Home row mastery</td>
+                                    <td>Touch typing without looking</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Top and bottom rows</td>
+                                    <td>Comfortable with all alphabet keys</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Numbers and symbols</td>
+                                    <td>15-20 WPM with basic text</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Full sentences</td>
+                                    <td>25-30 WPM with good accuracy</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+
+                    <div class="action-btn">
+                        <a href="index.html" class="primary-link">Start Practicing</a>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="lesson-nav-btn prev" data-prev="numbers-symbols">← Previous</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ | <a href="#" id="about-link">About</a></p>
+            <p class="copyright">© <span id="current-year">2023</span> TypeFluent. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="learn-typing.js"></script>
+    <script>
+        // Theme switcher functionality
+        const themeSwitch = document.getElementById('theme-switch');
+        const htmlElement = document.documentElement;
+        
+        themeSwitch.addEventListener('change', () => {
+            if (themeSwitch.checked) {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Load theme preference and set current year
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                htmlElement.setAttribute('data-theme', 'dark');
+                themeSwitch.checked = true;
+            } else {
+                htmlElement.setAttribute('data-theme', 'light');
+                themeSwitch.checked = false;
+            }
+            
+            // Set current year for copyright
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html> 

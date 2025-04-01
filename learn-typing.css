@@ -1,0 +1,321 @@
+/* Learning page specific styles */
+.learning-container {
+    display: flex;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: var(--keyboard-bg);
+    padding: 1.5rem 0;
+    border-right: 1px solid var(--input-border);
+    flex-shrink: 0;
+}
+
+.lesson-list h3 {
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--header-color);
+}
+
+.lesson-list ul {
+    list-style: none;
+}
+
+.lesson-list li {
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.lesson-list li span {
+    position: relative;
+    z-index: 1;
+}
+
+.lesson-list li:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+.lesson-list li.active {
+    background-color: rgba(var(--primary-color-rgb), 0.15);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.lesson-list li.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--primary-color);
+}
+
+.lesson-list li.completed span::after {
+    content: '✓';
+    display: inline-block;
+    margin-left: 8px;
+    color: var(--correct-color);
+}
+
+.progress-tracker {
+    padding: 1.5rem;
+    border-top: 1px solid var(--input-border);
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: var(--input-border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    font-size: 0.8rem;
+    color: var(--secondary-text);
+    text-align: center;
+}
+
+/* Lesson content styles */
+.lesson-content {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.lesson {
+    display: none;
+}
+
+.lesson.active {
+    display: block;
+}
+
+.lesson h2 {
+    color: var(--header-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.lesson h3 {
+    color: var(--header-color);
+    margin: 1.5rem 0 0.8rem;
+    font-size: 1.3rem;
+}
+
+.lesson p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.lesson ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.lesson li {
+    margin-bottom: 0.5rem;
+}
+
+.image-container {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.lesson-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.important-tip {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.practice-text {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 2;
+}
+
+.action-btn {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.practice-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--correct-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.practice-btn:hover {
+    background-color: #219653;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--input-border);
+}
+
+.lesson-nav-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    transition: background-color 0.3s;
+}
+
+.lesson-nav-btn.next {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.lesson-nav-btn.next:hover {
+    background-color: var(--primary-hover);
+}
+
+.lesson-nav-btn.prev {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+}
+
+.lesson-nav-btn.prev:hover {
+    background-color: var(--input-border);
+}
+
+.schedule-table {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 0.8rem;
+    text-align: left;
+    border: 1px solid var(--input-border);
+}
+
+.schedule-table th {
+    background-color: var(--keyboard-bg);
+    font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+/* Add a CSS variable for primary color with RGB values for opacity use */
+:root {
+    --primary-color-rgb: 52, 152, 219;
+}
+
+[data-theme="dark"] {
+    --primary-color-rgb: 52, 152, 219;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .learning-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--input-border);
+    }
+    
+    .lesson-content {
+        max-height: none;
+    }
+}
+
+/* Keyboard demonstration styles */
+.keyboard-demo-container {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.keyboard-demo-container .keyboard {
+    transform: scale(0.8);
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Highlight styles for different rows */
+.highlight-row {
+    background-color: rgba(var(--primary-color-rgb), 0.15);
+    box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.3);
+    border-radius: 5px;
+}
+
+.highlight-key {
+    background-color: rgba(var(--primary-color-rgb), 0.35) !important;
+    box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.5);
+    }
+} 

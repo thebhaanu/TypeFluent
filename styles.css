@@ -1,0 +1,458 @@
+/* Theme CSS Variables */
+:root {
+    /* Light theme (default) */
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --card-bg: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --input-border: #ddd;
+    --correct-color: #27ae60;
+    --incorrect-color: #e74c3c;
+    --current-bg: #f1c40f;
+    --secondary-text: #7f8c8d;
+    --keyboard-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --header-color: #3498db;
+    --card-bg: #2c2c2c;
+    --card-shadow: rgba(0, 0, 0, 0.3);
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --input-border: #444;
+    --correct-color: #2ecc71;
+    --incorrect-color: #e74c3c;
+    --current-bg: #f39c12;
+    --secondary-text: #bdc3c7;
+    --keyboard-bg: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header styles */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.theme-switch {
+    opacity: 0;
+    position: absolute;
+}
+
+.theme-switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    background-color: var(--card-bg);
+    border-radius: 100px;
+    position: relative;
+    padding: 5px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.theme-switch-icon {
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.slider {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: var(--primary-color);
+    left: 3px;
+    top: 3px;
+}
+
+.theme-switch:checked + .theme-switch-label .slider {
+    transform: translateX(30px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--header-color);
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.primary-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.primary-link:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.guide-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    border: 1px solid var(--primary-color);
+}
+
+.guide-link:hover {
+    background-color: var(--primary-hover);
+    color: white;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+.stat {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.stat div:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+}
+
+.typing-area {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.training-level-info {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.training-level-info .progress {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+.text-display {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.text-display span {
+    position: relative;
+}
+
+.text-display span.correct {
+    color: var(--correct-color);
+}
+
+.text-display span.incorrect {
+    color: var(--incorrect-color);
+    text-decoration: underline;
+}
+
+.text-display span.current {
+    background-color: var(--current-bg);
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    border: 2px solid var(--input-border);
+    border-radius: 5px;
+    resize: none;
+    height: 120px;
+    transition: border-color 0.3s;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.input-field::placeholder {
+    color: var(--secondary-text);
+}
+
+/* Keyboard visualizer in the main typing page */
+.keyboard-visualizer {
+    margin-bottom: 2rem;
+}
+
+.toggle-keyboard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.toggle-keyboard input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.keyboard-wrapper {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--card-shadow);
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.keyboard-wrapper.hidden {
+    display: none;
+}
+
+/* Make the keyboard smaller in the main page */
+.keyboard-visualizer .keyboard {
+    transform: scale(0.9);
+    margin: 0 auto;
+    background-color: var(--keyboard-bg);
+}
+
+.keyboard-visualizer .hands {
+    transform: scale(0.9);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.difficulty-selector, .mode-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.difficulty-selector label {
+    font-weight: bold;
+}
+
+.mode-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.mode-selector label {
+    font-weight: bold;
+}
+
+.mode-description {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-left: 5px;
+}
+
+#flow-mode {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+select, button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+select {
+    background-color: var(--card-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    margin-bottom: 1.5rem;
+    color: var(--header-color);
+}
+
+.result-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.result-stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+.result-label {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .text-display {
+        font-size: 1rem;
+        height: 150px;
+    }
+    
+    .input-field {
+        font-size: 1rem;
+        height: 100px;
+    }
+} 
